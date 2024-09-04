@@ -4,11 +4,20 @@ const searchInput=document.getElementById('search')
 
 let characterArray=[]
 
+searchInput.addEventListener("input",(e)=>{
+    const value=e.target.value.toLowerCase();
+    console.log(value)
+    characterArray.forEach((character)=>{
+        const isVisible=character.name.toLowerCase().includes(value);
+        character.element.classList.toggle("hide",!isVisible);
+    })
+})
+
 getCharacters()
 
 
 function getCharacters(){
-    fetch("https://potterhead-api.vercel.app/api/characters")
+    fetch("https://harry-potter-backend-api-workshop-2.onrender.com/characters")
     .then(res=>res.json())
     .then(data=>{
         console.log(data);
