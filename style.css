@@ -11,10 +11,10 @@
   }
 
   body{
-      background-color: gold;
+      background-color: #0E5B51;
       font-family: "Griffy", system-ui;
       font-weight: 400;
-      font-style: normal;
+      font-style: bold;
   }
 
   header{
@@ -22,7 +22,7 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
-    background-color: darkred;
+    background-color: 8B8F8B;
     position:relative;
   }
 
@@ -45,7 +45,7 @@
 }
 
 .search::placeholder{
-    color:whitesmoke;
+    color:black;
 }
 
 main{
@@ -92,7 +92,7 @@ main{
 .front{
     position:relative;
     backface-visibility: hidden;
-    background-color: lightsalmon;
+    background-color: #8B8F8B;
     z-index: 1;
     overflow: hidden;
 }
@@ -100,7 +100,7 @@ main{
 .back{
     position: absolute;
     backface-visibility: hidden;
-    background-color: white;
+    background-color: #0E5B51;
     transform: rotateY(180deg);
 }
 

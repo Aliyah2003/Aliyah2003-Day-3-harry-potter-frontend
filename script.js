@@ -17,7 +17,7 @@ getCharacters()
 
 
 function getCharacters(){
-    fetch("https://harry-potter-backend-api-workshop-2.onrender.com/characters")
+    fetch("https://day-2-add-post-delete-methods-in-harry.onrender.com/characters")
     .then(res=>res.json())
     .then(data=>{
         console.log(data);
